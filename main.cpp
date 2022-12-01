@@ -112,8 +112,7 @@ void find_file(const std::string &root, const std::string &finding, int max_thre
         for (const auto &f : files) {
             if (f == finding && !IS_FOUND) {
                 IS_FOUND = true;
-                std::string result = "Founded file: " + temp_root + f + "\n";
-                std::cout << result;
+                std::cout << "Founded file: " + temp_root + f + "\n";
                 return;
             }
         }
